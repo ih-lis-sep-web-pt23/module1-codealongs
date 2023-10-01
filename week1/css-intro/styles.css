@@ -1,0 +1,44 @@
+p {
+  color: green;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.box-dimensions {
+  width: 150px;
+  height: 150px;
+}
+
+#yellow-text {
+  color: yellow;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+* {
+  font-family: monospace;
+}
+
+.by-name {
+  background-color: plum;
+}
+
+.by-hex {
+  background-color: #ffe4c4;
+}
+
+.by-rgb {
+  background-color: rgb(196, 255, 245);
+}
+
+.by-rgba {
+  background-color: rgba(0, 0, 255, 0.277);
+}
