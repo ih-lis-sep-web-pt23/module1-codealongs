@@ -247,3 +247,45 @@ const allTheNames = originalArray.reduce((acc, cur) => {
 });
 
 console.log(allTheNames);
+
+// reverse
+// like the name says, it reverses the order of the elements inside the array
+// MUTATES THE ORIGINAL ARRAY
+
+const reversedNumbers = numbers.reverse();
+console.log(reversedNumbers);
+console.log(numbers);
+
+// creates a copy of the array using the spread operator ...
+const copyArray = [...numbers];
+copyArray.reverse();
+console.log(copyArray);
+console.log(numbers);
+
+// sort
+// MUTATES THE ORIGINAL ARRAY
+const randomNumbers = [23, 1, 56, 195, 45, 0, 300, 256];
+randomNumbers.sort();
+
+console.log(randomNumbers);
+
+// we can pass a compare function to our sort method
+
+// ordering in ascending
+randomNumbers.sort((a, b) => a - b);
+console.log(randomNumbers);
+
+// pseudo-code, not really working
+function compare(a, b) {
+  if (a - b > 0) {
+    // a is greater than b because the result of a - b is a positive value
+    // so we switch b to come before a
+  }
+  if (b - a > 0) {
+    // b is greater than a
+    // switch a to be before b
+  }
+  if (a - b === 0) {
+    // they are the same, keep as is
+  }
+}
